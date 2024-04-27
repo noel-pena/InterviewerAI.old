@@ -12,7 +12,7 @@ def get_initial_question():
     initial_question = getRandomQuestion()
     return jsonify({"initial_question": initial_question})
 
-@app.route('/api/feedback', methods=['POST'])
+@app.route('/feedback', methods=['POST'])
 def get_feedback():
     try:
         data = request.get_json()
